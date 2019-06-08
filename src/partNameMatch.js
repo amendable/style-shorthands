@@ -1,13 +1,11 @@
 import _ from 'lodash'
-import { all as cssProperties } from 'known-css-properties'
+import cssProperties from './cssProperties.json'
 import singlePropPartNameMatch from './singlePropPartNameMatch'
-
-const orderedCssProperties = _.orderBy(cssProperties, ['length'], ['desc'])
 
 export default (key) => {
   let result
 
-  _.each(orderedCssProperties, (prop) => {
+  _.each(cssProperties, (prop) => {
     result = singlePropPartNameMatch(key, prop)
     if (result) return false
   })

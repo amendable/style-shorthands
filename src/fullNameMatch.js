@@ -1,4 +1,3 @@
-import { all as cssProperties } from 'known-css-properties'
-import camelCaseCss from 'camelcase-css'
+import cssProperties from './cssProperties.json'
 
-export default (key) => cssProperties.find(prop => camelCaseCss(prop) === key)
+export default (key) => cssProperties.includes(key)
