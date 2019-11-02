@@ -14,7 +14,7 @@
   },
   "repository": "amendable/style-shorthands",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
